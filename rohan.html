@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="rana.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="ranalogo20.png" alt="Logo" class="logo">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#hire-me">HIRE ME</a></li>
+            </ul>
+            <img src="moon.png" alt="Theme Toggle Icon" id="icon">
+        </nav>
+        
+        <div class="info">
+            <h1 class="info-text">I'M <span>Rohan</span> Rana</h1>
+            <p class="info-text2">This is my official portfolio website to showcase all my<br> works related to web development.</p>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+        
+        <div class="img-box">
+            <img src="darkphoto.png" alt="Background Image" class="back-img">
+            <img src="rohanrana.png" alt="Rohan Rana" class="main-img">
+        </div>
+        
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/rohan-kumar-8a31a1304/" target="_blank">
+                <i class="fab fa-linkedin"></i> LINKEDIN
+            </a>
+            <a href="https://github.com/rohan8603" target="_blank">
+                <i class="fab fa-github"></i> GITHUB
+            </a>
+            <a href="https://leetcode.com/u/rohan8603/" target="_blank">
+                <i class="fas fa-code"></i> LEETCODE
+            </a>
+            <a href="https://www.codechef.com/users/funny_tree_43" target="_blank">
+                <i class="fas fa-utensils"></i> CODECHEF
+            </a>
+        </div>
+    </div>
+
+    <script>
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function() {
+            document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")) {
+                icon.src = "sun.png";
+            } else {
+                icon.src = "moon.png";
+            }
+        }
+    </script>
+</body>
+</html>
